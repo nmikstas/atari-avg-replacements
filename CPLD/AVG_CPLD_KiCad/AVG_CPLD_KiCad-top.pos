@@ -1,0 +1,15 @@
+### Module positions - created on 11/04/19 20:57:40 ###
+### Printed by Pcbnew version kicad 4.0.7
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                 Package                    PosX       PosY       Rot  Side
+D1        BLUE                D_0805                 113.1570   -63.2460  270.0000  top
+D2        BLUE                D_0805                 134.7470   -63.2460  270.0000  top
+R1        4.7k                R_0805_HandSoldering   130.8100   -55.8800  270.0000  top
+R2        4.7k                R_0805_HandSoldering   128.2700   -55.8800  270.0000  top
+R3        4.7k                R_0805_HandSoldering   125.7300   -55.8800  270.0000  top
+R4        4.7k                R_0805_HandSoldering   123.1900   -55.8800  270.0000  top
+R5        1k                  R_0805_HandSoldering   113.1570   -68.0720   90.0000  top
+R6        4.7k                R_0805_HandSoldering   134.7470   -68.0720   90.0000  top
+U1        ATF1508ASL-25AU100  CPLD                   123.9520   -71.3740    0.0000  top
+## End

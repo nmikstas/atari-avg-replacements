@@ -1,0 +1,1290 @@
+****** Initial fitting strategy and property ******
+ Pla_in_file = AVG.tt2
+ Pla_out_file = AVG.tt3
+ Jedec_file = AVG.jed
+ Vector_file = AVG.tmv
+ verilog_file = AVG.vt
+ Time_file = 
+ Log_file = AVG.fit
+ err_file = 
+ Device_name = TQFP100
+ Module_name = 
+ Package_type = TQFP
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector = OFF
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 185
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+AVG13.AR equation needs patching.
+AVG8.AR equation needs patching.
+AVG12.AR equation needs patching.
+AVG10.AR equation needs patching.
+AVG11.AR equation needs patching.
+AVG7.AR equation needs patching.
+AVG2.AR equation needs patching.
+AVG6.AR equation needs patching.
+AVG1.AR equation needs patching.
+AVG5.AR equation needs patching.
+AVG9.AR equation needs patching.
+AVG4.AR equation needs patching.
+AVG3.AR equation needs patching.
+AVG0.AP equation needs patching.
+14 control equtions need patching
+
+Attempt to place floating signals ...
+------------------------------------
+w0b0 is placed at feedback node 602 (MC 2)
+w0b1 is placed at feedback node 604 (MC 4)
+main_bus4 is placed at feedback node 607 (MC 7)
+w3b1 is placed at feedback node 608 (MC 8)
+w2b1 is placed at feedback node 609 (MC 9)
+main_bus2 is placed at feedback node 610 (MC 10)
+w3b0 is placed at feedback node 611 (MC 11)
+main_bus1 is placed at feedback node 612 (MC 12)
+w2b0 is placed at feedback node 613 (MC 13)
+w1b0 is placed at feedback node 614 (MC 14)
+main_bus3 is placed at feedback node 615 (MC 15)
+w1b1 is placed at feedback node 616 (MC 16)
+w1b4 is placed at feedback node 618 (MC 18)
+w0b4 is placed at feedback node 620 (MC 20)
+w0b2 is placed at feedback node 623 (MC 23)
+w3b4 is placed at feedback node 624 (MC 24)
+w2b4 is placed at feedback node 625 (MC 25)
+main_bus9 is placed at feedback node 626 (MC 26)
+w3b2 is placed at feedback node 627 (MC 27)
+main_bus7 is placed at feedback node 628 (MC 28)
+w2b2 is placed at feedback node 629 (MC 29)
+w1b2 is placed at feedback node 630 (MC 30)
+main_bus6 is placed at feedback node 631 (MC 31)
+TDI is placed at pin 4 (MC 32)
+main_bus5 is placed at feedback node 632 (MC 32)
+AVG3 is placed at pin 25 (MC 33)
+AVG13.AR is placed at feedback node 634 (MC 34)
+AVG4 is placed at pin 24 (MC 35)
+AVG8.AR is placed at feedback node 636 (MC 36)
+AVG5 is placed at pin 23 (MC 37)
+STROBE2 is placed at pin 22 (MC 38)
+AVG12.AR is placed at feedback node 638 (MC 38)
+AVG10.AR is placed at feedback node 639 (MC 39)
+OP2 is placed at pin 21 (MC 40)
+AVG11.AR is placed at feedback node 640 (MC 40)
+VGGO is placed at pin 20 (MC 41)
+AVG7.AR is placed at feedback node 641 (MC 41)
+AVG2.AR is placed at feedback node 642 (MC 42)
+DVY3 is placed at pin 19 (MC 43)
+AVG6.AR is placed at feedback node 643 (MC 43)
+AVG1.AR is placed at feedback node 644 (MC 44)
+DVY4 is placed at pin 17 (MC 45)
+AVG5.AR is placed at feedback node 645 (MC 45)
+AVG9.AR is placed at feedback node 646 (MC 46)
+AVG4.AR is placed at feedback node 647 (MC 47)
+TMS is placed at pin 15 (MC 48)
+AVG3.AR is placed at feedback node 648 (MC 48)
+AVG10 is placed at pin 37 (MC 49)
+w1b8 is placed at feedback node 650 (MC 50)
+AVG9 is placed at pin 36 (MC 51)
+w1b6 is placed at feedback node 652 (MC 52)
+AVG8 is placed at pin 35 (MC 53)
+AVG7 is placed at pin 33 (MC 54)
+w1b7 is placed at feedback node 655 (MC 55)
+AVG6 is placed at pin 32 (MC 56)
+DVY9 is placed at pin 31 (MC 57)
+w0b8 is placed at feedback node 657 (MC 57)
+w1b5 is placed at feedback node 658 (MC 58)
+DVY8 is placed at pin 30 (MC 59)
+w0b6 is placed at feedback node 659 (MC 59)
+w0b5 is placed at feedback node 660 (MC 60)
+DVY7 is placed at pin 29 (MC 61)
+w0b7 is placed at feedback node 661 (MC 61)
+DVY6 is placed at pin 28 (MC 62)
+AVG0.AP is placed at feedback node 662 (MC 62)
+sp_qa is placed at feedback node 663 (MC 63)
+DVY5 is placed at pin 27 (MC 64)
+sp_qb is placed at feedback node 664 (MC 64)
+AVG11 is placed at pin 40 (MC 65)
+stat0 is placed at feedback node 666 (MC 66)
+AVG12 is placed at pin 41 (MC 67)
+w2b11 is placed at feedback node 668 (MC 68)
+AVG13 is placed at pin 42 (MC 69)
+STROBE0 is placed at pin 44 (MC 70)
+w3b11 is placed at feedback node 670 (MC 70)
+w3b10 is placed at feedback node 671 (MC 71)
+OP0 is placed at pin 45 (MC 72)
+w2b10 is placed at feedback node 672 (MC 72)
+DVY12 is placed at pin 46 (MC 73)
+w3b9 is placed at feedback node 673 (MC 73)
+w1b11 is placed at feedback node 674 (MC 74)
+DVY11 is placed at pin 47 (MC 75)
+w1b9 is placed at feedback node 675 (MC 75)
+w2b9 is placed at feedback node 676 (MC 76)
+DVY10 is placed at pin 48 (MC 77)
+w0b9 is placed at feedback node 677 (MC 77)
+DVY2 is placed at pin 49 (MC 78)
+w1b10 is placed at feedback node 678 (MC 78)
+w0b11 is placed at feedback node 679 (MC 79)
+DVY1 is placed at pin 50 (MC 80)
+w0b10 is placed at feedback node 680 (MC 80)
+AVG2 is placed at pin 52 (MC 81)
+AVG1 is placed at pin 53 (MC 83)
+ST3 is placed at pin 54 (MC 85)
+AVG0 is placed at pin 55 (MC 86)
+ST2 is placed at pin 56 (MC 88)
+STROBE1 is placed at pin 57 (MC 89)
+OP1 is placed at pin 58 (MC 91)
+DVY0 is placed at pin 60 (MC 93)
+STATUS is placed at pin 61 (MC 94)
+main_bus8 is placed at feedback node 695 (MC 95)
+TCK is placed at pin 62 (MC 96)
+main_bus11 is placed at feedback node 696 (MC 96)
+w0b12 is placed at feedback node 697 (MC 97)
+w2b8 is placed at feedback node 698 (MC 98)
+w3b3 is placed at feedback node 699 (MC 99)
+w2b7 is placed at feedback node 700 (MC 100)
+w2b3 is placed at feedback node 701 (MC 101)
+w1b3 is placed at feedback node 702 (MC 102)
+w2b5 is placed at feedback node 703 (MC 103)
+w0b3 is placed at feedback node 704 (MC 104)
+w3b8 is placed at feedback node 705 (MC 105)
+w2b6 is placed at feedback node 706 (MC 106)
+w3b7 is placed at feedback node 707 (MC 107)
+main_bus13 is placed at feedback node 708 (MC 108)
+w3b5 is placed at feedback node 709 (MC 109)
+w3b6 is placed at feedback node 710 (MC 110)
+main_bus12 is placed at feedback node 711 (MC 111)
+TDO is placed at pin 73 (MC 112)
+main_bus10 is placed at feedback node 712 (MC 112)
+stat2 is placed at feedback node 714 (MC 114)
+stat4 is placed at feedback node 716 (MC 116)
+stat1 is placed at feedback node 719 (MC 119)
+w3b12 is placed at feedback node 722 (MC 122)
+w2b12 is placed at feedback node 724 (MC 124)
+w1b12 is placed at feedback node 727 (MC 127)
+stat3 is placed at feedback node 728 (MC 128)
+
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                              G       V         G       V                                    
+                              N       C         N       C                                    
+                              D       C         D       C                                    
+                  ------------------------------------------------------                     
+                 / 100  98  96  94  92  90  88  86  84  82  80  78  76  \                   
+                /     99  97  95  93  91  89  87  85  83  81  79  77     \                  
+               | 1                                                     75 |                  
+               | 2                                                     74 | GND              
+           VCC | 3                                                     73 | TDO              
+           TDI | 4                                                     72 |                  
+               | 5                                                     71 |                  
+               | 6                                                     70 |                  
+               | 7                                                     69 |                  
+               | 8                                                     68 |                  
+               | 9                                                     67 |                  
+               | 10                                                    66 | VCC              
+           GND | 11                                                    65 |                  
+               | 12                     ATF1508                        64 |                  
+               | 13                  100-Lead TQFP                     63 |                  
+               | 14                                                    62 | TCK              
+           TMS | 15                                                    61 | STATUS           
+               | 16                                                    60 | DVY0             
+          DVY4 | 17                                                    59 | GND              
+           VCC | 18                                                    58 | OP1              
+          DVY3 | 19                                                    57 | STROBE1          
+          VGGO | 20                                                    56 | ST2              
+           OP2 | 21                                                    55 | AVG0             
+       STROBE2 | 22                                                    54 | ST3              
+          AVG5 | 23                                                    53 | AVG1             
+          AVG4 | 24                                                    52 | AVG2             
+          AVG3 | 25                                                    51 | VCC              
+                \     27  29  31  33  35  37  39  41  43  45   47  49    /                  
+                 \  26  28  30  32  34  36  38  40  42  44  46  48   50 /                   
+                  ------------------------------------------------------                     
+D                   G D D D D D A A V A A A G V A A A G S O D D D D                          
+V                   N V V V V V V V C V V V N C V V V N T P V V V V                          
+Y                   D Y Y Y Y Y G G C G G G D C G G G D R 0 Y Y Y Y                          
+1                     5 6 7 8 9 6 7   8 9 1     1 1 1   O   1 1 1 2                          
+                                          0     1 2 3   B   2 1 0                            
+                                                        E                                    
+                                                        0                                    
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins which must reserved for the JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [26]
+{
+AVG2,AVG1,
+DVY0,DVY2,DVY3,DVY1,
+OP0,
+STROBE0,
+sp_qb,sp_qa,
+w0b2,w1b1,w0b1,w2b1,w3b1,w2b2,w0b3,w3b0,w1b2,w1b0,w2b3,w2b0,w3b2,w0b0,w3b3,w1b3,
+}
+Multiplexer assignment for block A
+w0b2			(MC9	FB)  : MUX 0		Ref (B23fb)
+w1b1			(MC8	FB)  : MUX 1		Ref (A16fb)
+w0b1			(MC2	FB)  : MUX 2		Ref (A4fb)
+AVG2			(MC15	P)   : MUX 3		Ref (F81p)
+DVY0			(MC24	P)   : MUX 4		Ref (F93p)
+OP0			(MC21	P)   : MUX 5		Ref (E72p)
+sp_qb			(MC14	FB)  : MUX 7		Ref (D64fb)
+DVY2			(MC23	P)   : MUX 8		Ref (E78p)
+DVY3			(MC26	P)   : MUX 10		Ref (C43p)
+w2b1			(MC4	FB)  : MUX 11		Ref (A9fb)
+DVY1			(MC25	P)   : MUX 14		Ref (E80p)
+sp_qa			(MC13	FB)  : MUX 15		Ref (D63fb)
+w3b1			(MC3	FB)  : MUX 16		Ref (A8fb)
+STROBE0			(MC22	P)   : MUX 17		Ref (E70p)
+AVG1			(MC16	P)   : MUX 21		Ref (F83p)
+w2b2			(MC11	FB)  : MUX 23		Ref (B29fb)
+w0b3			(MC20	FB)  : MUX 24		Ref (G104fb)
+w3b0			(MC5	FB)  : MUX 25		Ref (A11fb)
+w1b2			(MC12	FB)  : MUX 27		Ref (B30fb)
+w1b0			(MC7	FB)  : MUX 29		Ref (A14fb)
+w2b3			(MC18	FB)  : MUX 30		Ref (G101fb)
+w2b0			(MC6	FB)  : MUX 31		Ref (A13fb)
+w3b2			(MC10	FB)  : MUX 33		Ref (B27fb)
+w0b0			(MC1	FB)  : MUX 34		Ref (A2fb)
+w3b3			(MC17	FB)  : MUX 36		Ref (G99fb)
+w1b3			(MC19	FB)  : MUX 38		Ref (G102fb)
+
+FanIn assignment for block B [26]
+{
+AVG5,AVG3,
+DVY4,DVY5,DVY6,DVY8,
+OP0,
+STROBE0,
+sp_qb,sp_qa,
+w1b6,w2b8,w2b4,w1b5,w3b4,w3b8,w3b6,w1b8,w0b4,w3b5,w2b5,w2b6,w1b4,w0b6,w0b8,w0b5,
+}
+Multiplexer assignment for block B
+w1b6			(MC8	FB)  : MUX 0		Ref (D52fb)
+AVG5			(MC6	P)   : MUX 1		Ref (C37p)
+w2b8			(MC15	FB)  : MUX 2		Ref (G98fb)
+DVY4			(MC23	P)   : MUX 4		Ref (C45p)
+AVG3			(MC5	P)   : MUX 5		Ref (C33p)
+DVY5			(MC24	P)   : MUX 6		Ref (D64p)
+w2b4			(MC4	FB)  : MUX 7		Ref (B25fb)
+sp_qb			(MC14	FB)  : MUX 9		Ref (D64fb)
+w1b5			(MC10	FB)  : MUX 11		Ref (D58fb)
+w3b4			(MC3	FB)  : MUX 12		Ref (B24fb)
+w3b8			(MC17	FB)  : MUX 13		Ref (G105fb)
+DVY6			(MC25	P)   : MUX 14		Ref (D62p)
+sp_qa			(MC13	FB)  : MUX 15		Ref (D63fb)
+w3b6			(MC20	FB)  : MUX 17		Ref (G110fb)
+w1b8			(MC7	FB)  : MUX 18		Ref (D50fb)
+w0b4			(MC2	FB)  : MUX 20		Ref (B20fb)
+w3b5			(MC19	FB)  : MUX 25		Ref (G109fb)
+DVY8			(MC26	P)   : MUX 26		Ref (D59p)
+STROBE0			(MC22	P)   : MUX 27		Ref (E70p)
+w2b5			(MC16	FB)  : MUX 28		Ref (G103fb)
+OP0			(MC21	P)   : MUX 29		Ref (E72p)
+w2b6			(MC18	FB)  : MUX 33		Ref (G106fb)
+w1b4			(MC1	FB)  : MUX 34		Ref (B18fb)
+w0b6			(MC11	FB)  : MUX 35		Ref (D59fb)
+w0b8			(MC9	FB)  : MUX 37		Ref (D57fb)
+w0b5			(MC12	FB)  : MUX 39		Ref (D60fb)
+
+FanIn assignment for block C [22]
+{
+AVG3,AVG2,AVG4,AVG4.AR,AVG4.AR,AVG4.AR,
+OP2,
+STROBE2,
+VGGO,
+main_bus4,main_bus1,main_bus3,main_bus13,main_bus12,main_bus6,main_bus9,main_bus11,main_bus10,main_bus8,main_bus7,main_bus5,main_bus2,
+}
+Multiplexer assignment for block C
+main_bus4		(MC1	FB)  : MUX 0		Ref (A7fb)
+AVG3			(MC9	P)   : MUX 1		Ref (C33p)
+AVG2			(MC14	P)   : MUX 3		Ref (F81p)
+main_bus1		(MC3	FB)  : MUX 5		Ref (A12fb)
+main_bus3		(MC4	FB)  : MUX 7		Ref (A15fb)
+AVG4			(MC10	P)   : MUX 9		Ref (C35p)
+OP2			(MC21	P)   : MUX 11		Ref (C40p)
+main_bus13		(MC17	FB)  : MUX 13		Ref (G108fb)
+main_bus12		(MC18	FB)  : MUX 15		Ref (G111fb)
+main_bus6		(MC7	FB)  : MUX 17		Ref (B31fb)
+AVG5.AR			(MC11	FB)  : MUX 19		Ref (C45fb)
+VGGO			(MC20	P)   : MUX 20		Ref (C41p)
+AVG3.AR			(MC13	FB)  : MUX 21		Ref (C48fb)
+main_bus9		(MC5	FB)  : MUX 23		Ref (B26fb)
+main_bus11		(MC16	FB)  : MUX 25		Ref (F96fb)
+main_bus10		(MC19	FB)  : MUX 27		Ref (G112fb)
+main_bus8		(MC15	FB)  : MUX 29		Ref (F95fb)
+main_bus7		(MC6	FB)  : MUX 31		Ref (B28fb)
+main_bus5		(MC8	FB)  : MUX 33		Ref (B32fb)
+STROBE2			(MC22	P)   : MUX 35		Ref (C38p)
+AVG4.AR			(MC12	FB)  : MUX 37		Ref (C47fb)
+main_bus2		(MC2	FB)  : MUX 39		Ref (A10fb)
+
+FanIn assignment for block D [24]
+{
+AVG9.AR,AVG5,AVG9,AVG6,AVG8,AVG9.AR,AVG7,AVG9.AR,AVG9.AR,AVG9.AR,
+OP2,OP0,OP1,
+STROBE2,STROBE1,STROBE0,
+VGGO,
+main_bus9,main_bus8,main_bus6,main_bus10,main_bus7,
+sp_qb,sp_qa,
+}
+Multiplexer assignment for block D
+AVG8.AR			(MC4	FB)  : MUX 0		Ref (C36fb)
+AVG5			(MC5	P)   : MUX 1		Ref (C37p)
+VGGO			(MC20	P)   : MUX 2		Ref (C41p)
+OP2			(MC21	P)   : MUX 3		Ref (C40p)
+OP0			(MC18	P)   : MUX 5		Ref (E72p)
+STROBE2			(MC22	P)   : MUX 7		Ref (C38p)
+sp_qb			(MC15	FB)  : MUX 9		Ref (D64fb)
+STROBE1			(MC24	P)   : MUX 10		Ref (F89p)
+main_bus9		(MC1	FB)  : MUX 11		Ref (B26fb)
+AVG9			(MC10	P)   : MUX 13		Ref (D51p)
+AVG6			(MC13	P)   : MUX 15		Ref (D56p)
+AVG8			(MC11	P)   : MUX 17		Ref (D53p)
+sp_qa			(MC14	FB)  : MUX 19		Ref (D63fb)
+AVG7.AR			(MC7	FB)  : MUX 21		Ref (C41fb)
+main_bus8		(MC16	FB)  : MUX 23		Ref (F95fb)
+main_bus6		(MC3	FB)  : MUX 25		Ref (B31fb)
+STROBE0			(MC19	P)   : MUX 27		Ref (E70p)
+AVG7			(MC12	P)   : MUX 29		Ref (D54p)
+main_bus10		(MC17	FB)  : MUX 33		Ref (G112fb)
+OP1			(MC23	P)   : MUX 34		Ref (F91p)
+AVG6.AR			(MC8	FB)  : MUX 35		Ref (C43fb)
+AVG10.AR		(MC6	FB)  : MUX 36		Ref (C39fb)
+main_bus7		(MC2	FB)  : MUX 37		Ref (B28fb)
+AVG9.AR			(MC9	FB)  : MUX 39		Ref (C46fb)
+
+FanIn assignment for block E [16]
+{
+AVG11.AR,AVG11.AR,AVG11,AVG12,AVG10,AVG11.AR,
+OP0,OP2,
+STROBE2,STROBE0,
+VGGO,
+main_bus12,main_bus11,main_bus13,
+sp_qb,sp_qa,
+}
+Multiplexer assignment for block E
+main_bus12		(MC11	FB)  : MUX 1		Ref (G111fb)
+VGGO			(MC14	P)   : MUX 2		Ref (C41p)
+AVG13.AR		(MC1	FB)  : MUX 4		Ref (C34fb)
+OP0			(MC12	P)   : MUX 5		Ref (E72p)
+main_bus11		(MC9	FB)  : MUX 7		Ref (F96fb)
+sp_qb			(MC6	FB)  : MUX 9		Ref (D64fb)
+AVG12.AR		(MC2	FB)  : MUX 12		Ref (C38fb)
+AVG11			(MC7	P)   : MUX 13		Ref (E65p)
+AVG12			(MC8	P)   : MUX 15		Ref (E67p)
+STROBE2			(MC16	P)   : MUX 17		Ref (C38p)
+AVG10			(MC4	P)   : MUX 23		Ref (D49p)
+STROBE0			(MC13	P)   : MUX 27		Ref (E70p)
+AVG11.AR		(MC3	FB)  : MUX 28		Ref (C40fb)
+OP2			(MC15	P)   : MUX 29		Ref (C40p)
+sp_qa			(MC5	FB)  : MUX 35		Ref (D63fb)
+main_bus13		(MC10	FB)  : MUX 37		Ref (G108fb)
+
+FanIn assignment for block F [26]
+{
+AVG1,AVG0,AVG0.AP,AVG0.AP,AVG0.AP,
+DVY10,DVY7,
+OP2,OP0,
+STROBE2,ST2,ST3,
+VGGO,
+main_bus2,main_bus1,
+sp_qa,stat4,sp_qb,
+w2b10,w3b10,w2b7,w1b10,w0b7,w0b10,w1b7,w3b7,
+}
+Multiplexer assignment for block F
+DVY10			(MC25	P)   : MUX 0		Ref (E77p)
+AVG1			(MC14	P)   : MUX 1		Ref (F83p)
+OP2			(MC21	P)   : MUX 3		Ref (C40p)
+w2b10			(MC11	FB)  : MUX 4		Ref (E72fb)
+OP0			(MC19	P)   : MUX 5		Ref (E72p)
+STROBE2			(MC22	P)   : MUX 7		Ref (C38p)
+sp_qa			(MC8	FB)  : MUX 9		Ref (D63fb)
+w3b10			(MC10	FB)  : MUX 10		Ref (E71fb)
+AVG0			(MC15	P)   : MUX 11		Ref (F86p)
+stat4			(MC18	FB)  : MUX 12		Ref (H116fb)
+main_bus2		(MC1	FB)  : MUX 13		Ref (A10fb)
+w2b7			(MC16	FB)  : MUX 14		Ref (G100fb)
+w1b10			(MC12	FB)  : MUX 15		Ref (E78fb)
+VGGO			(MC20	P)   : MUX 16		Ref (C41p)
+main_bus1		(MC2	FB)  : MUX 19		Ref (A12fb)
+ST2			(MC23	P)   : MUX 21		Ref (F88p)
+ST3			(MC24	P)   : MUX 23		Ref (F85p)
+w0b7			(MC6	FB)  : MUX 25		Ref (D61fb)
+w0b10			(MC13	FB)  : MUX 27		Ref (E80fb)
+AVG1.AR			(MC4	FB)  : MUX 29		Ref (C44fb)
+w1b7			(MC5	FB)  : MUX 32		Ref (D55fb)
+AVG2.AR			(MC3	FB)  : MUX 33		Ref (C42fb)
+w3b7			(MC17	FB)  : MUX 35		Ref (G107fb)
+DVY7			(MC26	P)   : MUX 36		Ref (D61p)
+sp_qb			(MC9	FB)  : MUX 37		Ref (D64fb)
+AVG0.AP			(MC7	FB)  : MUX 39		Ref (D62fb)
+
+FanIn assignment for block G [25]
+{
+AVG8,AVG7,AVG4,AVG13,AVG9,AVG6,
+DVY9,DVY11,DVY12,
+OP0,
+STROBE0,
+sp_qa,sp_qb,
+w3b12,w3b11,w0b11,w0b9,w2b11,w2b9,w2b12,w1b9,w1b11,w1b12,w0b12,w3b9,
+}
+Multiplexer assignment for block G
+w3b12			(MC18	FB)  : MUX 1		Ref (H122fb)
+w3b11			(MC10	FB)  : MUX 2		Ref (E70fb)
+AVG8			(MC3	P)   : MUX 3		Ref (D53p)
+OP0			(MC21	P)   : MUX 5		Ref (E72p)
+DVY9			(MC23	P)   : MUX 6		Ref (D57p)
+AVG7			(MC4	P)   : MUX 7		Ref (D54p)
+AVG4			(MC1	P)   : MUX 9		Ref (C35p)
+DVY11			(MC24	P)   : MUX 10		Ref (E75p)
+AVG13			(MC9	P)   : MUX 11		Ref (E69p)
+AVG9			(MC2	P)   : MUX 13		Ref (D51p)
+sp_qa			(MC6	FB)  : MUX 15		Ref (D63fb)
+w0b11			(MC16	FB)  : MUX 17		Ref (E79fb)
+w0b9			(MC15	FB)  : MUX 19		Ref (E77fb)
+DVY12			(MC25	P)   : MUX 20		Ref (E73p)
+AVG6			(MC5	P)   : MUX 21		Ref (D56p)
+sp_qb			(MC7	FB)  : MUX 23		Ref (D64fb)
+w2b11			(MC8	FB)  : MUX 24		Ref (E68fb)
+w2b9			(MC14	FB)  : MUX 25		Ref (E76fb)
+STROBE0			(MC22	P)   : MUX 27		Ref (E70p)
+w2b12			(MC19	FB)  : MUX 29		Ref (H124fb)
+w1b9			(MC13	FB)  : MUX 31		Ref (E75fb)
+w1b11			(MC12	FB)  : MUX 33		Ref (E74fb)
+w1b12			(MC20	FB)  : MUX 35		Ref (H127fb)
+w0b12			(MC17	FB)  : MUX 36		Ref (G97fb)
+w3b9			(MC11	FB)  : MUX 37		Ref (E73fb)
+
+FanIn assignment for block H [9]
+{
+AVG13,
+OP0,
+STROBE0,
+stat2,stat3,stat1,sp_qb,stat0,sp_qa,
+}
+Multiplexer assignment for block H
+stat2			(MC5	FB)  : MUX 4		Ref (H114fb)
+stat3			(MC7	FB)  : MUX 5		Ref (H128fb)
+stat1			(MC6	FB)  : MUX 6		Ref (H119fb)
+sp_qb			(MC2	FB)  : MUX 7		Ref (D64fb)
+stat0			(MC3	FB)  : MUX 8		Ref (E66fb)
+AVG13			(MC4	P)   : MUX 9		Ref (E69p)
+sp_qa			(MC1	FB)  : MUX 15		Ref (D63fb)
+OP0			(MC8	P)   : MUX 19		Ref (E72p)
+STROBE0			(MC9	P)   : MUX 27		Ref (E70p)
+
+Creating JEDEC file C:\USERS\NICK\CODING_BOOTCAMP\ATARI-AVG-REPLACEMENTS\CPLD\HDL_SOURCE\AVG.jed ...
+
+TQFP100 programmed logic:
+-----------------------------------
+AVG1.T = 1;
+
+AVG2.T = 1;
+
+AVG3.T = 1;
+
+AVG6.T = 1;
+
+AVG4.T = 1;
+
+AVG5.T = 1;
+
+AVG7.T = 1;
+
+AVG10.T = 1;
+
+AVG11.T = 1;
+
+AVG12.T = 1;
+
+AVG9.T = 1;
+
+AVG13.T = 1;
+
+AVG8.T = 1;
+
+sp_qa.T = !OP2;
+
+sp_qb.T = ((!OP1 & !OP2 & sp_qa.Q)
+	# (OP1 & !OP2 & !sp_qa.Q));
+
+stat0.T = 1;
+
+stat3.T = 1;
+
+stat1.T = 1;
+
+stat2.T = 1;
+
+stat4.T = 1;
+
+STATUS.T = 1;
+
+!AVG0.D = (AVG0.Q & !ST2);
+
+w0b0.L = AVG1.Q;
+
+w0b2.L = AVG3.Q;
+
+w0b1.L = AVG2.Q;
+
+w0b3.L = AVG4.Q;
+
+w0b4.L = AVG5.Q;
+
+w0b5.L = AVG6.Q;
+
+w0b6.L = AVG7.Q;
+
+w0b7.L = AVG8.Q;
+
+w0b8.L = AVG9.Q;
+
+w0b11.L = AVG12.Q;
+
+w0b9.L = AVG10.Q;
+
+w0b10.L = AVG11.Q;
+
+w0b12.L = AVG13.Q;
+
+w1b0.L = AVG1.Q;
+
+w1b1.L = AVG2.Q;
+
+w1b2.L = AVG3.Q;
+
+w1b3.L = AVG4.Q;
+
+w1b5.L = AVG6.Q;
+
+w1b4.L = AVG5.Q;
+
+w1b6.L = AVG7.Q;
+
+w1b7.L = AVG8.Q;
+
+w1b8.L = AVG9.Q;
+
+w1b9.L = AVG10.Q;
+
+w1b10.L = AVG11.Q;
+
+w1b12.L = AVG13.Q;
+
+w1b11.L = AVG12.Q;
+
+w2b0.L = AVG1.Q;
+
+w2b1.L = AVG2.Q;
+
+w2b2.L = AVG3.Q;
+
+w2b4.L = AVG5.Q;
+
+w2b3.L = AVG4.Q;
+
+w2b5.L = AVG6.Q;
+
+w2b6.L = AVG7.Q;
+
+w2b7.L = AVG8.Q;
+
+w2b8.L = AVG9.Q;
+
+w2b9.L = AVG10.Q;
+
+w2b11.L = AVG12.Q;
+
+w2b10.L = AVG11.Q;
+
+w2b12.L = AVG13.Q;
+
+w3b0.L = AVG1.Q;
+
+w3b2.L = AVG3.Q;
+
+w3b1.L = AVG2.Q;
+
+w3b3.L = AVG4.Q;
+
+w3b5.L = AVG6.Q;
+
+w3b4.L = AVG5.Q;
+
+w3b6.L = AVG7.Q;
+
+w3b7.L = AVG8.Q;
+
+w3b8.L = AVG9.Q;
+
+w3b9.L = AVG10.Q;
+
+w3b10.L = AVG11.Q;
+
+w3b12.L = AVG13.Q;
+
+w3b11.L = AVG12.Q;
+
+main_bus2 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b1.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b1.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b1.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b1.Q)
+	# (DVY1 & !OP0));
+
+main_bus1 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b0.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b0.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b0.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b0.Q)
+	# (DVY0 & !OP0));
+
+main_bus3 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b2.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b2.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b2.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b2.Q)
+	# (DVY2 & !OP0));
+
+main_bus5 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b4.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b4.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b4.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b4.Q)
+	# (DVY4 & !OP0));
+
+main_bus4 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b3.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b3.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b3.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b3.Q)
+	# (DVY3 & !OP0));
+
+main_bus7 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b6.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b6.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b6.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b6.Q)
+	# (DVY6 & !OP0));
+
+main_bus6 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b5.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b5.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b5.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b5.Q)
+	# (DVY5 & !OP0));
+
+main_bus8 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b7.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b7.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b7.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b7.Q)
+	# (DVY7 & !OP0));
+
+main_bus9 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b8.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b8.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b8.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b8.Q)
+	# (DVY8 & !OP0));
+
+main_bus12 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b11.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b11.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b11.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b11.Q)
+	# (DVY11 & !OP0));
+
+main_bus13 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b12.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b12.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b12.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b12.Q)
+	# (DVY12 & !OP0));
+
+main_bus10 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b9.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b9.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b9.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b9.Q)
+	# (DVY9 & !OP0));
+
+main_bus11 = ((OP0 & !sp_qa.Q & sp_qb.Q & w2b10.Q)
+	# (OP0 & sp_qa.Q & sp_qb.Q & w3b10.Q)
+	# (OP0 & !sp_qa.Q & !sp_qb.Q & w0b10.Q)
+	# (OP0 & sp_qa.Q & !sp_qb.Q & w1b10.Q)
+	# (DVY10 & !OP0));
+
+AVG1.C = AVG0.Q;
+
+AVG1.AR = (!VGGO
+	# (!main_bus1 & !OP2 & !STROBE2));
+
+AVG1.AP = (VGGO & main_bus1 & !OP2 & !STROBE2);
+
+AVG2.C = !AVG1.Q;
+
+AVG2.AR = (!VGGO
+	# (!main_bus2 & !OP2 & !STROBE2));
+
+AVG2.AP = (VGGO & main_bus2 & !OP2 & !STROBE2);
+
+AVG3.C = !AVG2.Q;
+
+AVG3.AR = (!VGGO
+	# (!main_bus3 & !OP2 & !STROBE2));
+
+AVG3.AP = (VGGO & main_bus3 & !OP2 & !STROBE2);
+
+AVG6.C = !AVG5.Q;
+
+AVG6.AR = (!VGGO
+	# (!main_bus6 & !OP2 & !STROBE2));
+
+AVG6.AP = (VGGO & main_bus6 & !OP2 & !STROBE2);
+
+AVG4.C = !AVG3.Q;
+
+AVG4.AR = (!VGGO
+	# (!main_bus4 & !OP2 & !STROBE2));
+
+AVG4.AP = (VGGO & main_bus4 & !OP2 & !STROBE2);
+
+AVG5.C = !AVG4.Q;
+
+AVG5.AR = (!VGGO
+	# (!main_bus5 & !OP2 & !STROBE2));
+
+AVG5.AP = (VGGO & main_bus5 & !OP2 & !STROBE2);
+
+AVG7.C = !AVG6.Q;
+
+AVG7.AR = (!VGGO
+	# (!main_bus7 & !OP2 & !STROBE2));
+
+AVG7.AP = (VGGO & main_bus7 & !OP2 & !STROBE2);
+
+AVG10.C = !AVG9.Q;
+
+AVG10.AR = (!VGGO
+	# (!main_bus10 & !OP2 & !STROBE2));
+
+AVG10.AP = (VGGO & main_bus10 & !OP2 & !STROBE2);
+
+AVG11.C = !AVG10.Q;
+
+AVG11.AR = (!VGGO
+	# (!main_bus11 & !OP2 & !STROBE2));
+
+AVG11.AP = (VGGO & main_bus11 & !OP2 & !STROBE2);
+
+AVG12.C = !AVG11.Q;
+
+AVG12.AR = (!VGGO
+	# (!main_bus12 & !OP2 & !STROBE2));
+
+AVG12.AP = (VGGO & main_bus12 & !OP2 & !STROBE2);
+
+AVG9.C = !AVG8.Q;
+
+AVG9.AR = (!VGGO
+	# (!main_bus9 & !OP2 & !STROBE2));
+
+AVG9.AP = (VGGO & main_bus9 & !OP2 & !STROBE2);
+
+AVG13.C = !AVG12.Q;
+
+AVG13.AR = (!VGGO
+	# (!main_bus13 & !OP2 & !STROBE2));
+
+AVG13.AP = (VGGO & main_bus13 & !OP2 & !STROBE2);
+
+AVG8.C = !AVG7.Q;
+
+AVG8.AR = (!VGGO
+	# (!main_bus8 & !OP2 & !STROBE2));
+
+AVG8.AP = (VGGO & main_bus8 & !OP2 & !STROBE2);
+
+sp_qa.C = STROBE1;
+
+sp_qa.AR = !VGGO;
+
+sp_qb.C = STROBE1;
+
+sp_qb.AR = !VGGO;
+
+stat0.C = VGGO;
+
+stat3.C = !stat2.Q;
+
+stat1.C = !stat0.Q;
+
+stat2.C = !stat1.Q;
+
+stat4.C = !stat3.Q;
+
+STATUS.C = !stat4.Q;
+
+AVG0.C = ST3;
+
+AVG0.AP = (!VGGO
+	# (!STROBE2 & !OP2));
+
+w0b0.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b2.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b1.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b3.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b4.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b5.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b6.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b7.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b8.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b11.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b9.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b10.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w0b12.LE = (!sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b0.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b1.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b2.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b3.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b5.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b4.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b6.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b7.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b8.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b9.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b10.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b12.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w1b11.LE = (sp_qa.Q & !sp_qb.Q & !OP0 & !STROBE0);
+
+w2b0.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b1.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b2.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b4.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b3.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b5.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b6.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b7.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b8.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b9.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b11.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b10.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w2b12.LE = (!sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b0.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b2.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b1.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b3.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b5.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b4.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b6.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b7.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b8.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b9.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b10.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b12.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+w3b11.LE = (sp_qa.Q & sp_qb.Q & !OP0 & !STROBE0);
+
+
+TQFP100 Pin/Node Placement:
+------------------------------------
+Pin 4  = TDI; /* MC 32 */
+Pin 15 = TMS; /* MC 48 */ 
+Pin 17 = DVY4; /* MC 45 */ 
+Pin 19 = DVY3; /* MC 43 */ 
+Pin 20 = VGGO; /* MC 41 */ 
+Pin 21 = OP2; /* MC 40 */ 
+Pin 22 = STROBE2; /* MC 38 */ 
+Pin 23 = AVG5; /* MC 37 */ 
+Pin 24 = AVG4; /* MC 35 */ 
+Pin 25 = AVG3; /* MC 33 */ 
+Pin 27 = DVY5; /* MC 64 */ 
+Pin 28 = DVY6; /* MC 62 */ 
+Pin 29 = DVY7; /* MC 61 */ 
+Pin 30 = DVY8; /* MC 59 */ 
+Pin 31 = DVY9; /* MC 57 */ 
+Pin 32 = AVG6; /* MC 56 */ 
+Pin 33 = AVG7; /* MC 54 */ 
+Pin 35 = AVG8; /* MC 53 */ 
+Pin 36 = AVG9; /* MC 51 */ 
+Pin 37 = AVG10; /* MC 49 */ 
+Pin 40 = AVG11; /* MC 65 */ 
+Pin 41 = AVG12; /* MC 67 */ 
+Pin 42 = AVG13; /* MC 69 */ 
+Pin 44 = STROBE0; /* MC 70 */ 
+Pin 45 = OP0; /* MC 72 */ 
+Pin 46 = DVY12; /* MC 73 */ 
+Pin 47 = DVY11; /* MC 75 */ 
+Pin 48 = DVY10; /* MC 77 */ 
+Pin 49 = DVY2; /* MC 78 */ 
+Pin 50 = DVY1; /* MC 80 */ 
+Pin 52 = AVG2; /* MC 81 */ 
+Pin 53 = AVG1; /* MC 83 */ 
+Pin 54 = ST3; /* MC 85 */ 
+Pin 55 = AVG0; /* MC 86 */ 
+Pin 56 = ST2; /* MC 88 */ 
+Pin 57 = STROBE1; /* MC 89 */ 
+Pin 58 = OP1; /* MC 91 */ 
+Pin 60 = DVY0; /* MC 93 */ 
+Pin 61 = STATUS; /* MC 94 */ 
+Pin 62 = TCK; /* MC 96 */ 
+Pin 73 = TDO; /* MC 112 */ 
+PINNODE 602 = w0b0; /* MC 2 Feedback */
+PINNODE 604 = w0b1; /* MC 4 Feedback */
+PINNODE 607 = main_bus4; /* MC 7 Feedback */
+PINNODE 608 = w3b1; /* MC 8 Feedback */
+PINNODE 609 = w2b1; /* MC 9 Feedback */
+PINNODE 610 = main_bus2; /* MC 10 Feedback */
+PINNODE 611 = w3b0; /* MC 11 Feedback */
+PINNODE 612 = main_bus1; /* MC 12 Feedback */
+PINNODE 613 = w2b0; /* MC 13 Feedback */
+PINNODE 614 = w1b0; /* MC 14 Feedback */
+PINNODE 615 = main_bus3; /* MC 15 Feedback */
+PINNODE 616 = w1b1; /* MC 16 Feedback */
+PINNODE 618 = w1b4; /* MC 18 Feedback */
+PINNODE 620 = w0b4; /* MC 20 Feedback */
+PINNODE 623 = w0b2; /* MC 23 Feedback */
+PINNODE 624 = w3b4; /* MC 24 Feedback */
+PINNODE 625 = w2b4; /* MC 25 Feedback */
+PINNODE 626 = main_bus9; /* MC 26 Feedback */
+PINNODE 627 = w3b2; /* MC 27 Feedback */
+PINNODE 628 = main_bus7; /* MC 28 Feedback */
+PINNODE 629 = w2b2; /* MC 29 Feedback */
+PINNODE 630 = w1b2; /* MC 30 Feedback */
+PINNODE 631 = main_bus6; /* MC 31 Feedback */
+PINNODE 632 = main_bus5; /* MC 32 Feedback */
+PINNODE 634 = AVG13.AR; /* MC 34 Feedback */
+PINNODE 636 = AVG8.AR; /* MC 36 Feedback */
+PINNODE 638 = AVG12.AR; /* MC 38 Feedback */
+PINNODE 639 = AVG10.AR; /* MC 39 Feedback */
+PINNODE 640 = AVG11.AR; /* MC 40 Feedback */
+PINNODE 641 = AVG7.AR; /* MC 41 Feedback */
+PINNODE 642 = AVG2.AR; /* MC 42 Feedback */
+PINNODE 643 = AVG6.AR; /* MC 43 Feedback */
+PINNODE 644 = AVG1.AR; /* MC 44 Feedback */
+PINNODE 645 = AVG5.AR; /* MC 45 Feedback */
+PINNODE 646 = AVG9.AR; /* MC 46 Feedback */
+PINNODE 647 = AVG4.AR; /* MC 47 Feedback */
+PINNODE 648 = AVG3.AR; /* MC 48 Feedback */
+PINNODE 650 = w1b8; /* MC 50 Feedback */
+PINNODE 652 = w1b6; /* MC 52 Feedback */
+PINNODE 655 = w1b7; /* MC 55 Feedback */
+PINNODE 657 = w0b8; /* MC 57 Feedback */
+PINNODE 658 = w1b5; /* MC 58 Feedback */
+PINNODE 659 = w0b6; /* MC 59 Feedback */
+PINNODE 660 = w0b5; /* MC 60 Feedback */
+PINNODE 661 = w0b7; /* MC 61 Feedback */
+PINNODE 662 = AVG0.AP; /* MC 62 Feedback */
+PINNODE 663 = sp_qa; /* MC 63 Feedback */
+PINNODE 664 = sp_qb; /* MC 64 Feedback */
+PINNODE 666 = stat0; /* MC 66 Feedback */
+PINNODE 668 = w2b11; /* MC 68 Feedback */
+PINNODE 670 = w3b11; /* MC 70 Feedback */
+PINNODE 671 = w3b10; /* MC 71 Feedback */
+PINNODE 672 = w2b10; /* MC 72 Feedback */
+PINNODE 673 = w3b9; /* MC 73 Feedback */
+PINNODE 674 = w1b11; /* MC 74 Feedback */
+PINNODE 675 = w1b9; /* MC 75 Feedback */
+PINNODE 676 = w2b9; /* MC 76 Feedback */
+PINNODE 677 = w0b9; /* MC 77 Feedback */
+PINNODE 678 = w1b10; /* MC 78 Feedback */
+PINNODE 679 = w0b11; /* MC 79 Feedback */
+PINNODE 680 = w0b10; /* MC 80 Feedback */
+PINNODE 695 = main_bus8; /* MC 95 Feedback */
+PINNODE 696 = main_bus11; /* MC 96 Feedback */
+PINNODE 697 = w0b12; /* MC 97 Feedback */
+PINNODE 698 = w2b8; /* MC 98 Feedback */
+PINNODE 699 = w3b3; /* MC 99 Feedback */
+PINNODE 700 = w2b7; /* MC 100 Feedback */
+PINNODE 701 = w2b3; /* MC 101 Feedback */
+PINNODE 702 = w1b3; /* MC 102 Feedback */
+PINNODE 703 = w2b5; /* MC 103 Feedback */
+PINNODE 704 = w0b3; /* MC 104 Feedback */
+PINNODE 705 = w3b8; /* MC 105 Feedback */
+PINNODE 706 = w2b6; /* MC 106 Feedback */
+PINNODE 707 = w3b7; /* MC 107 Feedback */
+PINNODE 708 = main_bus13; /* MC 108 Feedback */
+PINNODE 709 = w3b5; /* MC 109 Feedback */
+PINNODE 710 = w3b6; /* MC 110 Feedback */
+PINNODE 711 = main_bus12; /* MC 111 Feedback */
+PINNODE 712 = main_bus10; /* MC 112 Feedback */
+PINNODE 714 = stat2; /* MC 114 Feedback */
+PINNODE 716 = stat4; /* MC 116 Feedback */
+PINNODE 719 = stat1; /* MC 119 Feedback */
+PINNODE 722 = w3b12; /* MC 122 Feedback */
+PINNODE 724 = w2b12; /* MC 124 Feedback */
+PINNODE 727 = w1b12; /* MC 127 Feedback */
+PINNODE 728 = stat3; /* MC 128 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive  DCERP  FBDrive    DCERP  Foldback  CascadeOut     TotPT output_slew
+MC1   2         --               --                --        --             0     slow
+MC2   0         --               w0b0       Lc---  --        --             2     slow
+MC3   1         --               --                --        --             0     slow
+MC4   0         --               w0b1       Lc---  --        --             2     slow
+MC5   100       --               --                --        --             0     slow
+MC6   99        --               --                --        --             0     slow
+MC7   0         --               main_bus4  C----  NA        --             5     slow
+MC8   98        --               w3b1       Lc---  --        --             2     slow
+MC9   97        --               w2b1       Lc---  --        --             2     slow
+MC10  0         --               main_bus2  C----  NA        --             5     slow
+MC11  96        --               w3b0       Lc---  --        --             2     slow
+MC12  0         --               main_bus1  C----  NA        --             5     slow
+MC13  94        --               w2b0       Lc---  --        --             2     slow
+MC14  93        --               w1b0       Lc---  --        --             2     slow
+MC15  0         --               main_bus3  C----  NA        --             5     slow
+MC16  92        --               w1b1       Lc---  --        --             2     slow
+MC17  14        --               --                --        --             0     slow
+MC18  0         --               w1b4       Lc---  --        --             2     slow
+MC19  13        --               --                --        --             0     slow
+MC20  0         --               w0b4       Lc---  --        --             2     slow
+MC21  12        --               --                --        --             0     slow
+MC22  10        --               --                --        --             0     slow
+MC23  0         --               w0b2       Lc---  --        --             2     slow
+MC24  9         --               w3b4       Lc---  --        --             2     slow
+MC25  8         --               w2b4       Lc---  --        --             2     slow
+MC26  0         --               main_bus9  C----  NA        --             5     slow
+MC27  7         --               w3b2       Lc---  --        --             2     slow
+MC28  0         --               main_bus7  C----  NA        --             5     slow
+MC29  6         --               w2b2       Lc---  --        --             2     slow
+MC30  5         --               w1b2       Lc---  --        --             2     slow
+MC31  0         --               main_bus6  C----  NA        --             5     slow
+MC32  4    --   TDI       INPUT  main_bus5  C----  NA        --             5     slow
+MC33  25   on   AVG3      Tc-rp  --                --        --             3     slow
+MC34  0         --               AVG13.AR   C----  --        --             2     slow
+MC35  24   on   AVG4      Tc-rp  --                --        --             3     slow
+MC36  0         --               AVG8.AR    C----  --        --             2     slow
+MC37  23   on   AVG5      Tc-rp  --                --        --             3     slow
+MC38  22   --   STROBE2   INPUT  AVG12.AR   C----  --        --             2     slow
+MC39  0         --               AVG10.AR   C----  --        --             2     slow
+MC40  21   --   OP2       INPUT  AVG11.AR   C----  --        --             2     slow
+MC41  20   --   VGGO      INPUT  AVG7.AR    C----  --        --             2     slow
+MC42  0         --               AVG2.AR    C----  --        --             2     slow
+MC43  19   --   DVY3      INPUT  AVG6.AR    C----  --        --             2     slow
+MC44  0         --               AVG1.AR    C----  --        --             2     slow
+MC45  17   --   DVY4      INPUT  AVG5.AR    C----  --        --             2     slow
+MC46  16        --               AVG9.AR    C----  --        --             2     slow
+MC47  0         --               AVG4.AR    C----  --        --             2     slow
+MC48  15   --   TMS       INPUT  AVG3.AR    C----  --        --             2     slow
+MC49  37   on   AVG10     Tc-rp  --                --        --             3     slow
+MC50  0         --               w1b8       Lc---  --        --             2     slow
+MC51  36   on   AVG9      Tc-rp  --                --        --             3     slow
+MC52  0         --               w1b6       Lc---  --        --             2     slow
+MC53  35   on   AVG8      Tc-rp  --                --        --             3     slow
+MC54  33   on   AVG7      Tc-rp  --                --        --             3     slow
+MC55  0         --               w1b7       Lc---  --        --             2     slow
+MC56  32   on   AVG6      Tc-rp  --                --        --             3     slow
+MC57  31   --   DVY9      INPUT  w0b8       Lc---  --        --             2     slow
+MC58  0         --               w1b5       Lc---  --        --             2     slow
+MC59  30   --   DVY8      INPUT  w0b6       Lc---  --        --             2     slow
+MC60  0         --               w0b5       Lc---  --        --             2     slow
+MC61  29   --   DVY7      INPUT  w0b7       Lc---  --        --             2     slow
+MC62  28   --   DVY6      INPUT  AVG0.AP    C----  --        --             2     slow
+MC63  0         --               sp_qa      Tc-r-  --        --             3     slow
+MC64  27   --   DVY5      INPUT  sp_qb      Tc-r-  --        --             4     slow
+MC65  40   on   AVG11     Tc-rp  --                --        --             3     slow
+MC66  0         --               stat0      Tc---  --        --             1     slow
+MC67  41   on   AVG12     Tc-rp  --                --        --             3     slow
+MC68  0         --               w2b11      Lc---  --        --             2     slow
+MC69  42   on   AVG13     Tc-rp  --                --        --             3     slow
+MC70  44   --   STROBE0   INPUT  w3b11      Lc---  --        --             2     slow
+MC71  0         --               w3b10      Lc---  --        --             2     slow
+MC72  45   --   OP0       INPUT  w2b10      Lc---  --        --             2     slow
+MC73  46   --   DVY12     INPUT  w3b9       Lc---  --        --             2     slow
+MC74  0         --               w1b11      Lc---  --        --             2     slow
+MC75  47   --   DVY11     INPUT  w1b9       Lc---  --        --             2     slow
+MC76  0         --               w2b9       Lc---  --        --             2     slow
+MC77  48   --   DVY10     INPUT  w0b9       Lc---  --        --             2     slow
+MC78  49   --   DVY2      INPUT  w1b10      Lc---  --        --             2     slow
+MC79  0         --               w0b11      Lc---  --        --             2     slow
+MC80  50   --   DVY1      INPUT  w0b10      Lc---  --        --             2     slow
+MC81  52   on   AVG2      Tc-rp  --                --        --             3     slow
+MC82  0         --               --                --        --             0     slow
+MC83  53   on   AVG1      Tc-rp  --                --        --             3     slow
+MC84  0         --               --                --        --             0     slow
+MC85  54   --   ST3       INPUT  --                --        --             0     slow
+MC86  55   on   AVG0      Dc--p  --                --        --             3     slow
+MC87  0         --               --                --        --             0     slow
+MC88  56   --   ST2       INPUT  --                --        --             0     slow
+MC89  57   --   STROBE1   INPUT  --                --        --             0     slow
+MC90  0         --               --                --        --             0     slow
+MC91  58   --   OP1       INPUT  --                --        --             0     slow
+MC92  0         --               --                --        --             0     slow
+MC93  60   --   DVY0      INPUT  --                --        --             0     slow
+MC94  61   on   STATUS    Tc---  --                --        --             1     slow
+MC95  0         --               main_bus8  C----  NA        --             5     slow
+MC96  62   --   TCK       INPUT  main_bus11 C----  NA        --             5     slow
+MC97  63        --               w0b12      Lc---  --        --             2     slow
+MC98  0         --               w2b8       Lc---  --        --             2     slow
+MC99  64        --               w3b3       Lc---  --        --             2     slow
+MC100 0         --               w2b7       Lc---  --        --             2     slow
+MC101 65        --               w2b3       Lc---  --        --             2     slow
+MC102 67        --               w1b3       Lc---  --        --             2     slow
+MC103 0         --               w2b5       Lc---  --        --             2     slow
+MC104 68        --               w0b3       Lc---  --        --             2     slow
+MC105 69        --               w3b8       Lc---  --        --             2     slow
+MC106 0         --               w2b6       Lc---  --        --             2     slow
+MC107 70        --               w3b7       Lc---  --        --             2     slow
+MC108 0         --               main_bus13 C----  NA        --             5     slow
+MC109 71        --               w3b5       Lc---  --        --             2     slow
+MC110 72        --               w3b6       Lc---  --        --             2     slow
+MC111 0         --               main_bus12 C----  NA        --             5     slow
+MC112 73   --   TDO       INPUT  main_bus10 C----  NA        --             5     slow
+MC113 75        --               --                --        --             0     slow
+MC114 0         --               stat2      Tc---  --        --             1     slow
+MC115 76        --               --                --        --             0     slow
+MC116 0         --               stat4      Tc---  --        --             1     slow
+MC117 77        --               --                --        --             0     slow
+MC118 78        --               --                --        --             0     slow
+MC119 0         --               stat1      Tc---  --        --             1     slow
+MC120 79        --               --                --        --             0     slow
+MC121 80        --               --                --        --             0     slow
+MC122 0         --               w3b12      Lc---  --        --             2     slow
+MC123 81        --               --                --        --             0     slow
+MC124 0         --               w2b12      Lc---  --        --             2     slow
+MC125 83        --               --                --        --             0     slow
+MC126 84        --               --                --        --             0     slow
+MC127 0         --               w1b12      Lc---  --        --             2     slow
+MC128 85        --               stat3      Tc---  --        --             1     slow
+MC0   90        --               --                --        --             0     slow
+MC0   89        --               --                --        --             0     slow
+MC0   88        --               --                --        --             0     slow
+MC0   87        --               --                --        --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		12/16(75%)	0/16(0%)	0/16(0%)	36/80(45%)	(26)	0
+B: LC17	- LC32		12/16(75%)	1/16(6%)	0/16(0%)	36/80(45%)	(26)	0
+C: LC33	- LC48		16/16(100%)	9/16(56%)	0/16(0%)	35/80(43%)	(22)	0
+D: LC49	- LC64		16/16(100%)	10/16(62%)	0/16(0%)	40/80(50%)	(24)	0
+E: LC65	- LC80		16/16(100%)	10/16(62%)	0/16(0%)	34/80(42%)	(16)	0
+F: LC81	- LC96		6/16(37%)	10/16(62%)	0/16(0%)	20/80(25%)	(26)	0
+G: LC97	- LC112		16/16(100%)	1/16(6%)	0/16(0%)	41/80(51%)	(25)	0
+H: LC113- LC128		7/16(43%)	0/16(0%)	0/16(0%)	10/80(12%)	(9)	0
+
+Total dedicated input used:	0/4 	(0%)
+Total I/O pins used		41/80 	(51%)
+Total Logic cells used 		101/128 	(78%)
+Total Flip-Flop used 		74/128 	(57%)
+Total Foldback logic used 	0/128 	(0%)
+Total Nodes+FB/MCells 		101/128 	(78%)
+Total cascade used 		0
+Total input pins 		26
+Total output pins 		15
+Total Pts 			252
+Creating pla file C:\USERS\NICK\CODING_BOOTCAMP\ATARI-AVG-REPLACEMENTS\CPLD\HDL_SOURCE\AVG.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device TQFP100 fits 
+FIT1508 completed in 0.00 seconds

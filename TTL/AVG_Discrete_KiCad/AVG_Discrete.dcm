@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LS02_
+D Quad Nor2
+K TTL Nor2
+$ENDCMP
+#
+$CMP 74LS04_
+D Hex Inverseur
+K TTL not inv
+$ENDCMP
+#
+$CMP 74LS191_
+D 4 bits Synchronous 4 bits Up/Down BCD Counter
+K TTL CNT CNT4
+$ENDCMP
+#
+$CMP 74LS193_
+D Synchronous 4 bits Up/Down (2 clk) counter
+K TTL CNT CNT4
+$ENDCMP
+#
+$CMP 74LS244_
+D 8 bits Bus Buffer 3 State out
+K TTL Buffer BUS 3State
+$ENDCMP
+#
+$CMP 74LS670_
+D 4 x 4 Register Files Open Collect.
+K TTL Register OpenCol
+$ENDCMP
+#
+$CMP 74LS74_
+D Dual D FlipFlop, Set & Reset
+K TTL DFF
+F 74xx/74hc_hct74.pdf
+$ENDCMP
+#
+#End Doc Library

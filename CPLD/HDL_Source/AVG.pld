@@ -1,0 +1,305 @@
+Name     AVG ;
+PartNo   N/A ;
+Date     7/3/2019 ;
+Revision 1.0 ;
+Designer Nick Mikstas ;
+Company  N/A ;
+Assembly N/A ;
+Location N/A ;
+Device   f1508isptqfp100;
+
+$DEFINE L 'b'0
+$DEFINE H 'b'1
+
+/***************************************** DEVICE PINOUT ******************************************/
+/*
+             -------------U-------------
+   PIN 25<---|1-AVG3            AVG2-40|--->PIN 52
+             |                         |
+   PIN 24<---|2-AVG4            AVG1-39|--->PIN 53
+             |                         |
+   PIN 23<---|3-AVG5             ST3-38|--->PIN 54
+             |                         |
+   PIN 22<---|4-/STROBE2         VDD-37|--->5V0
+             |                         |
+   PIN 21<---|5-/OP2            AVG0-36|--->PIN 55
+             |                         |
+   PIN 20<---|6-/VGGO            ST2-35|--->PIN 56
+             |                         |
+   PIN 19<---|7-DVY3        /STROBE1-34|--->PIN 57
+             |                         |
+  PIN 17<---|8-DVY4             OP1-33|--->PIN 58
+             |                         |
+   PIN 27<---|9-DVY5            DVY0-32|--->PIN 60
+             |                         |
+   PIN 28<---|10-DVY6           DVY1-31|--->PIN 50
+             |                         |
+   PIN 29<---|11-DVY7           DVY2-30|--->PIN 49
+             |                         |
+   PIN 30<---|12-DVY8          DVY10-29|--->PIN 48
+             |                         |
+   PIN 31<---|13-DVY9          DVY11-28|--->PIN 47
+             |                         |
+      GND<---|14-VSS           DVY12-27|--->PIN 46
+             |                         |
+   PIN 32<---|15-AVG6           /OP0-26|--->PIN 45
+             |                         |
+   PIN 33<---|16-AVG7           /OPX-25|--->NC
+             |                         |
+   PIN 35<---|17-AVG8       /STROBE0-24|--->PIN 44
+             |                         |
+   PIN 36<---|18-AVG9          CARRY-23|--->NC
+             |                         |
+   PIN 37<---|19-AVG10         AVG13-22|--->PIN 42
+             |                         |
+   PIN 40<---|20-AVG11         AVG12-21|--->PIN 41
+             ---------------------------
+*/
+/***************************************** RESERVED PINS ******************************************/
+/*
+pin 4  = TDI
+pin 15 = TMS
+pin 62 = TCK
+pin 73 = TDO
+pin 87 = Dedicated Input
+pin 88 = Dedicated Input
+pin 89 = Dedicated Input
+pin 90 = Dedicated Input
+*/
+/******************************************* INPUT PINS *******************************************/
+
+pin 20           = VGGO;
+pin [22, 57, 44] = [STROBE2..0];
+pin [21, 58, 45] = [OP2..0];
+pin [54, 56]     = [ST3..2];
+
+pin [46, 47, 48, 31, 30, 29, 28, 27, 17, 19, 49, 50, 60] = [DVY12..0];
+
+/****************************************** OUTPUT PINS *******************************************/
+
+pin [42, 41, 40, 37, 36, 35, 33, 32, 23, 24, 25, 52, 53, 55] = [AVG13..0];
+pin 61 = STATUS;
+
+/***************************************** INTERNAL NODES *****************************************/
+
+/* Stack Pointer Nodes */
+node sp_qa;
+node sp_qb;
+
+/* Register File Nodes */
+node [reg_out12..0];
+node [w0b12..0];
+node [w1b12..0];
+node [w2b12..0];
+node [w3b12..0];
+
+/* Input Buffer Nodes */
+node [main_bus13..1];
+
+/* Control Logic Nodes */
+node D;
+node P_;
+
+node load_;
+node clr;
+
+node GW_;
+node GR_;
+
+/* Status Indicator Nodes */
+node [stat5..0];
+
+/**************** Output Feedback *****************/
+node AVG0_int;
+node AVG1_int;
+node AVG2_int;
+node AVG3_int;
+node AVG4_int;
+node AVG5_int;
+node AVG6_int;
+node AVG7_int;
+node AVG8_int;
+node AVG9_int;
+node AVG10_int;
+node AVG11_int;
+node AVG12_int;
+node AVG13_int;
+
+AVG0_int  = AVG0;
+AVG1_int  = AVG1;
+AVG2_int  = AVG2;
+AVG3_int  = AVG3;
+AVG4_int  = AVG4;
+AVG5_int  = AVG5;
+AVG6_int  = AVG6;
+AVG7_int  = AVG7;
+AVG8_int  = AVG8;
+AVG9_int  = AVG9;
+AVG10_int = AVG10;
+AVG11_int = AVG11;
+AVG12_int = AVG12;
+AVG13_int = AVG13;
+
+/************ Control Logic Equations *************/
+
+D     = !AVG0 # ST2;
+P_    = !(!(STROBE2 # OP2) # !VGGO);
+
+load_ = STROBE2 # OP2;
+clr   = !VGGO;
+
+GW_   = STROBE0 # OP0;
+GR_   = !OP0;
+
+/***************** Stack Pointer ******************/
+
+sp_qa.ar = !VGGO;
+sp_qb.ar = !VGGO;
+sp_qa.ck = STROBE1;
+sp_qb.ck = STROBE1;
+
+sp_qa.t = !OP2;
+sp_qb.t = (!sp_qa & (OP1 & !OP2)) # (sp_qa & (!OP1 & !OP2));
+
+/***************** Register File ******************/
+
+/* Read control */
+[reg_out12..0] = [sp_qb, sp_qa, GR_]:'b'000 & [w0b12..0]
+               # [sp_qb, sp_qa, GR_]:'b'010 & [w1b12..0]
+               # [sp_qb, sp_qa, GR_]:'b'100 & [w2b12..0]
+               # [sp_qb, sp_qa, GR_]:'b'110 & [w3b12..0]
+               # [sp_qb, sp_qa, GR_]:'b'XX1 & ['b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0, 'b'0];
+
+/* Write control */
+[w0b0.l,  w1b0.l,  w2b0.l,  w3b0.l]  = AVG1_int;
+[w0b1.l,  w1b1.l,  w2b1.l,  w3b1.l]  = AVG2_int;
+[w0b2.l,  w1b2.l,  w2b2.l,  w3b2.l]  = AVG3_int;
+[w0b3.l,  w1b3.l,  w2b3.l,  w3b3.l]  = AVG4_int;
+[w0b4.l,  w1b4.l,  w2b4.l,  w3b4.l]  = AVG5_int;
+[w0b5.l,  w1b5.l,  w2b5.l,  w3b5.l]  = AVG6_int;
+[w0b6.l,  w1b6.l,  w2b6.l,  w3b6.l]  = AVG7_int;
+[w0b7.l,  w1b7.l,  w2b7.l,  w3b7.l]  = AVG8_int;
+[w0b8.l,  w1b8.l,  w2b8.l,  w3b8.l]  = AVG9_int;
+[w0b9.l,  w1b9.l,  w2b9.l,  w3b9.l]  = AVG10_int;
+[w0b10.l, w1b10.l, w2b10.l, w3b10.l] = AVG11_int;
+[w0b11.l, w1b11.l, w2b11.l, w3b11.l] = AVG12_int;
+[w0b12.l, w1b12.l, w2b12.l, w3b12.l] = AVG13_int;
+
+[w0b12..0].le = [sp_qb, sp_qa, GW_]:'b'000 & [H, H, H, H, H, H, H, H, H, H, H, H, H];
+[w1b12..0].le = [sp_qb, sp_qa, GW_]:'b'010 & [H, H, H, H, H, H, H, H, H, H, H, H, H];
+[w2b12..0].le = [sp_qb, sp_qa, GW_]:'b'100 & [H, H, H, H, H, H, H, H, H, H, H, H, H];
+[w3b12..0].le = [sp_qb, sp_qa, GW_]:'b'110 & [H, H, H, H, H, H, H, H, H, H, H, H, H];
+
+/****************** Input Buffer ******************/
+
+main_bus1  = (DVY0  & !OP0) # reg_out0;
+main_bus2  = (DVY1  & !OP0) # reg_out1;
+main_bus3  = (DVY2  & !OP0) # reg_out2;
+main_bus4  = (DVY3  & !OP0) # reg_out3;
+main_bus5  = (DVY4  & !OP0) # reg_out4;
+main_bus6  = (DVY5  & !OP0) # reg_out5;
+main_bus7  = (DVY6  & !OP0) # reg_out6;
+main_bus8  = (DVY7  & !OP0) # reg_out7;
+main_bus9  = (DVY8  & !OP0) # reg_out8;
+main_bus10 = (DVY9  & !OP0) # reg_out9;
+main_bus11 = (DVY10 & !OP0) # reg_out10;
+main_bus12 = (DVY11 & !OP0) # reg_out11;
+main_bus13 = (DVY12 & !OP0) # reg_out12;
+
+/***************** AVG0 Flip-Flop *****************/
+
+AVG0.ck  = ST3;
+AVG0.d   = D;
+!AVG0.ap = P_;
+
+/**************** Program Counter *****************/
+
+AVG1.t  = 'b'1;
+AVG1.ck = AVG0_int;
+AVG1.ap = main_bus1 & !load_ & !clr;
+AVG1.ar = clr # (!load_ & !(main_bus1 & !load_ & !clr));
+
+AVG2.t  = 'b'1;
+AVG2.ck = !AVG1_int;
+AVG2.ap = main_bus2 & !load_ & !clr;
+AVG2.ar = clr # (!load_ & !(main_bus2 & !load_ & !clr));
+
+AVG3.t  = 'b'1;
+AVG3.ck = !AVG2_int;
+AVG3.ap = main_bus3 & !load_ & !clr;
+AVG3.ar = clr # (!load_ & !(main_bus3 & !load_ & !clr));
+
+AVG4.t  = 'b'1;
+AVG4.ck = !AVG3_int;
+AVG4.ap = main_bus4 & !load_ & !clr;
+AVG4.ar = clr # (!load_ & !(main_bus4 & !load_ & !clr));
+
+AVG5.t  = 'b'1;
+AVG5.ck = !AVG4_int;
+AVG5.ap = main_bus5 & !load_ & !clr;
+AVG5.ar = clr # (!load_ & !(main_bus5 & !load_ & !clr));
+
+AVG6.t  = 'b'1;
+AVG6.ck = !AVG5_int;
+AVG6.ap = main_bus6 & !load_ & !clr;
+AVG6.ar = clr # (!load_ & !(main_bus6 & !load_ & !clr));
+
+AVG7.t  = 'b'1;
+AVG7.ck = !AVG6_int;
+AVG7.ap = main_bus7 & !load_ & !clr;
+AVG7.ar = clr # (!load_ & !(main_bus7 & !load_ & !clr));
+
+AVG8.t  = 'b'1;
+AVG8.ck = !AVG7_int;
+AVG8.ap = main_bus8 & !load_ & !clr;
+AVG8.ar = clr # (!load_ & !(main_bus8 & !load_ & !clr));
+
+AVG9.t  = 'b'1;
+AVG9.ck = !AVG8_int;
+AVG9.ap = main_bus9 & !load_ & !clr;
+AVG9.ar = clr # (!load_ & !(main_bus9 & !load_ & !clr));
+
+AVG10.t  = 'b'1;
+AVG10.ck = !AVG9_int;
+AVG10.ap = main_bus10 & !load_ & !clr;
+AVG10.ar = clr # (!load_ & !(main_bus10 & !load_ & !clr));
+
+AVG11.t  = 'b'1;
+AVG11.ck = !AVG10_int;
+AVG11.ap = main_bus11 & !load_ & !clr;
+AVG11.ar = clr # (!load_ & !(main_bus11 & !load_ & !clr));
+
+AVG12.t  = 'b'1;
+AVG12.ck = !AVG11_int;
+AVG12.ap = main_bus12 & !load_ & !clr;
+AVG12.ar = clr # (!load_ & !(main_bus12 & !load_ & !clr));
+
+AVG13.t  = 'b'1;
+AVG13.ck = !AVG12_int;
+AVG13.ap = main_bus13 & !load_ & !clr;
+AVG13.ar = clr # (!load_ & !(main_bus13 & !load_ & !clr));
+
+/**************** Status Indicator ****************/
+
+stat0.t  = 'b'1;
+stat0.ck = VGGO;
+
+stat1.t  = 'b'1;
+stat1.ck = !stat0;
+
+stat2.t  = 'b'1;
+stat2.ck = !stat1;
+
+stat3.t  = 'b'1;
+stat3.ck = !stat2;
+
+stat4.t  = 'b'1;
+stat4.ck = !stat3;
+
+stat5.t  = 'b'1;
+stat5.ck = !stat4;
+
+STATUS = stat5;
+
+
+

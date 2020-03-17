@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name tie-fighter)(type KiCad)(uri "$(KIPRJMOD)/tie-fighter")(options "")(descr ""))
+)
